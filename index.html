@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wa Senior High School - Pride of the North | Official Website</title>
+    <meta name="description" content="Wa Senior High School - Pride of the North. Premier secondary education in Upper West Region, Ghana. Knowledge and Service since 1970s.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .school-logo {
+            width: 90px;
+            height: 90px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        .official-badge {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            border: 2px solid #ffd700;
+        }
+
+        .badge-top-text {
+            font-size: 6px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .badge-castle {
+            font-size: 20px;
+            margin: 2px 0;
+        }
+
+        .badge-bell {
+            font-size: 14px;
+            color: #ffd700;
+            margin: 2px 0;
+        }
+
+        .badge-bottom {
+            font-size: 4px;
+            font-weight: bold;
+            background: #1e3c72;
+            padding: 1px 2px;
+            margin-top: 2px;
+            border-radius: 2px;
+        }
+
+        .school-info h1 {
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .motto {
+            font-style: italic;
+            font-size: 1.2em;
+            opacity: 0.9;
+            color: #ffd700;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        .nav-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(30, 60, 114, 0.85), rgba(42, 82, 152, 0.85)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f4f8" width="1200" height="600"/><circle cx="200" cy="150" r="80" fill="%23e3f2fd" opacity="0.6"/><circle cx="800" cy="400" r="120" fill="%23e8f5e8" opacity="0.4"/><circle cx="1000" cy="200" r="60" fill="%23fff3e0" opacity="0.5"/></svg>');
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content h2 {
+            font-size: 4em;
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .hero-content p {
+            font-size: 1.4em;
+            max-width: 900px;
+            margin: 0 auto 35px;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 25px;
+            color: #1e3c72;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            margin: 25px auto;
+            border-radius: 3px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 80px;
+            line-height: 1.6;
+        }
+
+        .history-section {
+            background: white;
+        }
+
+        .history-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .history-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .history-text h3 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .history-timeline {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+            border-left: 5px solid #1e3c72;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: #ff6b6b;
+            font-size: 1.2em;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            margin: 80px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 45px 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            border-top: 6px solid #1e3c72;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2.2em;
+            color: white;
+        }
+
+        .feature-card h3 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+
+        .feature-card p {
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 4em;
+            margin-bottom: 15px;
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .stat-item p {
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        .academics-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 55px rgba(0,0,0,0.15);
+        }
+
+        .program-header {
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .program-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .program-content {
+            padding: 30px;
+        }
+
+        .program-subjects {
+            margin-top: 20px;
+        }
+
+        .subject-tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1e3c72;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin: 5px 5px 5px 0;
+        }
+
+        .facilities-section {
+            background: white;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        .facility-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .facility-card:hover {
+            border-color: #1e3c72;
+            transform: translateY(-5px);
+        }
+
+        .leadership-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .leader-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 6px solid #1e3c72;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+
+        .leader-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5em;
+            color: white;
+            border: 6px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .leader-card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .leader-title {
+            color: #ff6b6b;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .prefect-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.95em;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .achievements-section {
+            background: white;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 5px solid #ffd700;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .achievement-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .news-section {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+
+        .news-image {
+            height: 220px;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4em;
+        }
+
+        .news-content {
+            padding: 30px;
+        }
+
+        .news-date {
+            color: #ff6b6b;
+            font-size: 0.95em;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .news-content h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .school-life-section {
+            background: white;
+        }
+
+        .life-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .life-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border-top: 4px solid #1e3c72;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 20px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b6b;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .social-link {
+            width: 60px;
+            height: 60px;
+            background: #1e3c72;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.5em;
+        }
+
+        .social-link:hover {
+            background: #ff6b6b;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .school-info h1 {
+                font-size: 2.2em;
+            }
+
+            .hero-content h2 {
+                font-size: 2.5em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2em;
+            }
+
+            .nav-menu {
+                justify-content: center;
+            }
+
+            .history-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.2em;
+            }
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            font-size: 1.5em;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="school-logo">
+                    <div class="official-badge">
+                        <div class="badge-top-text">WA SENIOR HIGH SCHOOL</div>
+                        <div class="badge-castle">🏰</div>
+                        <div class="badge-bell">🔔</div>
+                        <div class="badge-bottom">KNOWLEDGE AND SERVICE</div>
+                    </div>
+                </div>
+                <div class="school-info">
+                    <h1>Wa Senior High School</h1>
+                    <p class="motto">Knowledge and Service</p>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#history" class="nav-item">History</a>
+                <a href="#academics" class="nav-item">Academics</a>
+                <a href="#facilities" class="nav-item">Facilities</a>
+                <a href="#leadership" class="nav-item">Leadership</a>
+                <a href="#life" class="nav-item">School Life</a>
+                <a href="#news" class="nav-item">News</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Pride of the North</h2>
+            <p class="hero-subtitle">Wa Senior High School</p>
+            <p>Providing quality, holistic and inclusive education to pre-tertiary students through commitment, hard work, honesty and punctuality since the 1970s. Located in the heart of Wa, Upper West Region, Ghana.</p>
+            <a href="#about" class="cta-button">Discover Our Excellence</a>
+            <a href="#contact" class="cta-button">Join Our Community</a>
+        </div>
+    </section>
+
+    <section id="history" class="section history-section">
+        <div class="container">
+            <h2 class="section-title">Our Rich History</h2>
+            <p class="section-subtitle">Decades of educational excellence and community service in the Upper West Region</p>
+            
+            <div class="history-content">
+                <div class="history-text">
+                    <h3>Foundation and Early Years</h3>
+                    <p>Wa Senior High School was established in the 1970s as part of Ghana's educational expansion program to bring quality secondary education to the northern regions. From its humble beginnings, the school was envisioned to serve as a beacon of learning and character development in the Upper West Region.</p>
+                    
+                    <p>The school's strategic location in Wa, the regional capital, made it accessible to students from across the Upper West Region and neighboring areas. Our founders believed in creating an institution that would not only provide academic excellence but also instill strong moral values in our students.</p>
+                    
+                    <p>Over the years, Wa Senior High School has grown from a small institution to become one of the most respected secondary schools in northern Ghana, earning the proud title "Pride of the North."</p>
+                </div>
+                
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1970s</div>
+                        <p>School founded as part of Ghana's educational expansion</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1980s</div>
+                        <p>First batch of graduates achieve remarkable success</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1990s</div>
+                        <p>Expansion of facilities and introduction of new programs</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2000s</div>
+                        <p>Modernization with ICT integration and updated curriculum</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2010s</div>
+                        <p>Recognition as one of Northern Ghana's top schools</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020s</div>
+                        <p>Continued excellence and adaptation to modern education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Wa Senior High School</h2>
+            <p class="section-subtitle">A comprehensive educational institution committed to nurturing future leaders through academic excellence and character development</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Academic Excellence</h3>
+                    <p>We maintain consistently high academic standards with experienced teachers, modern teaching methods, and comprehensive curricula that prepare students for tertiary education and successful careers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Boarding & Day School</h3>
+                    <p>Our institution accommodates both boarding and day students, providing safe, comfortable, and conducive learning environments that cater to diverse student needs and circumstances.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Regional Impact</h3>
+                    <p>Serving students from across the Upper West Region and beyond, we play a crucial role in the educational development of northern Ghana and neighboring countries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚽</div>
+                    <h3>Holistic Development</h3>
+                    <p>Beyond academics, we offer extensive extracurricular activities including sports, clubs, cultural activities, and leadership opportunities for well-rounded student development.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Modern Infrastructure</h3>
+                    <p>Our campus features state-of-the-art classrooms, well-equipped laboratories, modern library facilities, ICT centers, and sports facilities to support 21st-century learning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Character Building</h3>
+                    <p>We emphasize moral education, leadership development, and civic responsibility to produce graduates who are not just academically qualified but also morally upright citizens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stats-section">
+        <div class="container">
+            <h2 class="section-title">Our Achievements in Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Years of Educational Excellence</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2500+</h3>
+                    <p>Current Student Population</p>
+                </div>
+                <div class="stat-item">
+                    <h3>96%</h3>
+                    <p>WASSCE Pass Rate (2024)</p>
+                </div>
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Qualified Teaching Staff</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>Alumni Worldwide</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Academic Programs Offered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="section academics-section">
+        <div class="container">
+            <h2 class="section-title">Academic Programs</h2>
+            <p class="section-subtitle">Comprehensive educational pathways designed to prepare students for diverse career opportunities and higher education</p>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class
